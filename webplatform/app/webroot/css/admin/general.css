@@ -1,0 +1,274 @@
+.post-image-loaded {
+    width: 120px;
+}
+.txtcenter{
+  text-align: center !important;
+}
+.txtleft{
+  float: left !important;
+}
+.txtright{
+  float: left !important;
+}
+
+/*loader*****************************
+ *
+ * Start by setting display:none to make this hidden.
+   Then we position it in relation to the viewport window
+   with position:fixed. Width, height, top and left speak
+   for themselves. Background we set to 80% white with
+   our animation centered, and no-repeating */
+.loader {
+   /* background: url("../../img/loader.gif") no-repeat scroll 50% 50% rgba(255, 255, 255, 0.8);
+    height: 100%;
+    position: fixed;
+    width: 100%;*/
+    background: url("../../img/loader.gif") center center no-repeat rgba(255, 255, 255, 0.8);
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 999999;
+
+}
+.sloader{
+    background: url("../../img/sloader.gif") no-repeat scroll center transparent;
+    padding: 10px;
+}
+
+.cloader{
+    background: url("../../img/loader.gif") no-repeat scroll center transparent;
+    padding: 40px;
+}
+
+.floader{
+  opacity:0.2;
+}
+
+/* When the body has the loading class, we turn
+   the scrollbar off with overflow:hidden */
+body.loading {
+    overflow: hidden;   
+}
+
+/* Anytime the body has the loading class, our
+   modal element will be visible */
+body.loading .loader {
+    display: block;
+}
+
+/*loader*****************************/
+.postImage { position: relative;}
+.postImage, .imgdiv {
+    border: 1px solid #fff;
+    display: block;
+    overflow: hidden;
+    text-align: center !important;
+}
+.postImage > img {
+    height: 275px; /*28-8-15*/
+    width: auto;
+
+}
+.arrowdown a,.slideshow-div img{
+  cursor: pointer;
+}
+
+.imgdiv img {
+    height: auto;
+    width: auto;
+    cursor: pointer;
+}
+.mapcanvas{
+  width: 100%;
+  position: relative;
+  background-color: rgb(229, 227, 223);
+  overflow: hidden;
+  height: 310px; /*26-8-15*/
+}
+
+.slider-div ul li label.name {
+    height: 45px !important;
+    overflow: hidden !important;
+}
+
+/* Scroll css*/
+.mCustomScrollBox ul {
+    position:relative;
+}
+.nomore {
+    padding: 178px 0 0;
+    vertical-align: middle;
+}
+
+span.name {
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.top-options>form>select {
+    -moz-appearance: none;
+    background: url("../../img/select-arrow.jpg") no-repeat scroll right center #fff;
+    border: 1px solid #ddd;
+    height: 32px;
+    width: 80%;
+}
+/*.top-options>h1 {
+  width: 35%;
+}*/
+.follow{
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+.following{
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.active-post {
+    background: green;
+    color: #fff;
+    font-weight: bold;
+    padding: 6px;
+    text-align: center;
+    width: auto;
+    font-size: 13px;
+}
+.inactive-post {
+    background: red;
+    color: #fff;
+    font-weight: bold;
+    padding: 6px;
+    text-align: center;
+    width: auto;
+    font-size: 13px;
+}
+
+.active-inactive-post li {
+    float: left;
+    list-style: outside none none;
+    padding: 1px;
+}
+
+.active-inactive-post img {
+    height: 40px !important;
+    width: 40px !important;
+}
+
+input[type=reset].tolink
+{
+	padding: 8px 50px 9px;
+	color:#fff;
+	text-decoration:none;
+	font-size:24px;
+	text-align:center;
+	border-radius:30px;
+	text-transform:uppercase;
+	font-weight:300;
+	background-color: rgba(180, 180, 180, 0.2);
+	-webkit-transition: all 0.4s ease;                  
+	-moz-transition: all 0.4s ease;                 
+	-o-transition: all 0.4s ease;   
+	-ms-transition: all 0.4s ease;          
+	transition: all 0.4s ease;
+	border:none;
+}
+
+input[type=reset].tolink:hover
+{
+    background:#b4b4b4;
+}
+.user-info-top{width: 250px;}
+.user-info-top > a{text-overflow:ellipsis; white-space: nowrap;overflow: hidden; }
+
+.mCSB_container{cursor: pointer;}
+
+.save{
+    background: none repeat scroll 0 0 #1c6981;
+    border: 0 none;
+    color: #fff;
+    float: right;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    width: 18%;
+}
+
+/*.token-input-list {
+    width: 280px !important;
+}
+*/
+
+.add_more {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: none repeat scroll 0 0 #ccc;
+    border-color: #ccc -moz-use-text-color #ccc #ccc;
+    border-image: none;
+    border-style: none;
+    border-width: medium 39px medium medium;
+    color: #fff;
+    padding: 5px;
+}
+
+.modal-dialog {
+    /*left: 0px !important;
+    margin: 0px auto;
+    right: 0px !important;*/
+    top:30px
+}
+
+.cordinates {
+    background: none repeat scroll 0 0 white;
+    font-size: 13px;
+    padding: 8px;
+}
+
+.txtred{
+    color:red; 
+    
+}
+.txtgreen{
+    color:green; 
+    
+}
+
+.post-map-box-inner {
+    height: auto !important;
+}
+
+.media-box-pic > img{
+    cursor: pointer;
+}
+
+.tab-contentdiv.active {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.pro-content b {
+    font-weight: lighter;
+}
+
+.load-blue-btn {
+    background: none repeat scroll 0 0 #1c6981;
+    border-radius: 5%;
+    color: #fff;
+    height: 31px;
+    padding: 5px;
+    text-align: center;
+    width: auto;
+}
+
+.load-blue-btn:focus,.load-blue-btn:hover{
+    text-decoration: none;
+    font-weight: 400;
+    color:#FFF;
+}
+

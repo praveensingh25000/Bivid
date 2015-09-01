@@ -1,0 +1,244 @@
+@media all and (max-width:1350px){
+
+/*28-8-15 edit css start _Rajvir*/
+.slider-div.slider-div2 ul li { width:20%;}
+/*28-8-15 edit css start _Rajvir*/
+.input-group-mn {
+margin-bottom: 10px;
+}
+
+}
+
+@media all and (max-width:1024px){
+.nav-custom {
+margin-right: 0;
+padding-left: 15px;
+}
+.nav-custom.nav > li > a { padding-left:10px; padding-right:10px;}
+.navbar-form2 {
+    padding: 15px 0 0 10px;
+}
+.slider-div.slider-div2 ul li { width:25%;}
+
+
+.post-col {width:50%; padding-bottom:25px;}
+.post-picutre-box{
+width:28%;
+}
+.post-user-box{
+width:70%;
+}
+
+/*28-8-15 start _Rajvir*/
+.tab-contentdiv .profile .pro-content {
+    float: left;
+    width: 100%;
+}
+.search-input { width: 180px;}
+/*28-8-15 end _Rajvir*/
+
+/*31-8-15 start*/
+.form-btn-row{
+margin-top: 10px;
+}
+/*31-8-15 end*/
+
+
+}
+@media all and (min-width:768px) and (max-width:870px){
+.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {margin-left:0;}
+.nav.nav-custom > li a{
+    padding: 10px;
+}	
+.nav.nav-custom { margin-top:12px;}
+.navbar-form2 {
+	padding-left: 0;
+}
+.nav-right-side {
+    border-top: 1px solid #5ca9c2;
+    float: left;
+    margin: 10px 0 0;
+    width: 100%;
+}
+
+}
+
+@media all and (max-width:767px){
+.middle_login.middle_forgot{
+max-width:450px;
+}
+.middle_forgot .form-horizontal{width:100%; float:left;}
+.middle_login .landinglogo{margin-bottom: 25px;}
+.tab-contentdiv .three-blocks{width:100%; margin-bottom:10px;}
+.tab-contentdiv.active{padding:15px;}
+
+
+/*14-8-15 start _Rajvir*/
+.navbar-form2 { padding:0;}
+.navbar-custom .navbar-collapse, 
+.navbar-custom .navbar-form
+{
+	border:none;
+	box-shadow:none;
+	-moz-box-shadow:none;
+	-webkit-box-shadow:none;
+	-o-box-shadow:none;
+	
+}
+.nav-custom > li { border-bottom:1px solid #58a1b8;}
+.nav.navbar-icons > li { display:inline-block; vertical-align:top;}
+
+.navbar-form2 .form-group,
+.search-input,
+.form-group-custom .selectricWrapper
+{
+	width:100%;
+}
+.search-input2 { margin-bottom:10px;}
+.navbar-form2 .form-group {
+margin: 10px 0;
+}
+.inlines-mn .inlines
+{ padding:0 14px 0 0;}
+
+.inlines-mn .inlines.grid-icon {
+    margin: 0 10px 0 0;
+    padding: 0 10px 0 7px;
+}
+.inlines-mn .inlines { margin:0 0 10px 0;}
+.navbar-header-custom .navbar-toggle { margin:15px 15px 0 0;}
+.navbar-default.navbar-custom .navbar-toggle .icon-bar { background:#fff;}
+.navbar-default.navbar-custom .navbar-toggle:hover,
+.navbar-default.navbar-custom .navbar-toggle:focus
+{
+background:#1c6981;
+}
+.slider-div.slider-div2 ul li { width:33.3%;}
+/*14-8-15 end _Rajvir*/
+
+.post-map-box,
+.post-text-info
+{ width:50%;}
+.post-picutre-box.post-col{
+width:28%;
+}
+
+.post-picutre-box.post-col {
+    width: 28%;
+}
+.post-user-box {
+    width: 70%;
+}	
+.tab-contentdiv-rw .post-user-box .pro-content {
+    padding: 0 0 0 81.9px;
+}
+.tab-contentdiv .tab-contentdiv-rw .profile .imgdiv{float:left;}
+/*28-8-15 start _Rajvir*/
+.tab-contentdiv.tab-contentdiv-block { padding: 10px;}
+.tab-contentdiv .profile .pro-content {
+    float: none;
+    width: auto;
+}
+/*28-8-15 end _Rajvir*/
+
+	}
+@media all and (max-width:600px){	
+.middle_forgot.middle_login{height:600px;}
+.login_btn{width:100%; float:left;}
+.field input[type="text"], .field input[type="password"]{
+	width:88%;
+	}
+
+.slider-div.slider-div2 ul li { width:50%;}
+
+.post-col,
+.post-picutre-box.post-col
+{ width:100%;}
+.post-picutre-box.post-col {
+ padding:0 0 25px 0; text-align:center;
+}
+.tab-contentdiv .profile {margin-bottom: 30px;}
+.tab-contentdiv-rw .post-user-box .pro-content {
+    padding: 0 0 0 81px;
+}
+
+/*28-8-15 start _Rajvir*/
+/*.top-options > h1 { width:55%;}*/
+/*28-8-15 end _Rajvir*/
+.fileUpload{width:95%; margin-bottom:10px;}
+.post-deactive-btn {top:556px; padding: 8px 12px;
+}
+/*31-8-15 edit css start*/
+.input-group-mn{
+margin-bottom: 10px;
+}
+/*31-8-15 edit css end*/
+}
+
+@media all and (max-width:480px){	
+
+.slider-div.slider-div2 ul li,
+.search-input2 { width:100%;}
+.tab-contentdiv-rw .post-user-box .imgdiv {
+float:none;
+width:100% !important;
+text-align:center;
+}
+.tab-contentdiv-rw .post-user-box .imgdiv img {
+    max-width: none;
+    width: 113px !important;
+}
+.post-user-box .pro-content {
+    padding: 0;
+	text-align:center;
+}
+.tab-contentdiv-rw .post-user-box .pro-content {
+    padding: 0;
+}
+.tab-contentdiv .tab-contentdiv-rw .profile .imgdiv { float: none;}
+/*28-8-15 start _Rajvir*/
+/*.top-options > h1 {width:100%; margin:0 0 15px 0;}*/
+/*.top-options > h1,
+.inlines-mn
+{ width:100%;}
+*/
+.hours-block {
+padding: 0 84px 0 0;
+width: 100%;
+}
+.tab-contentdiv .profile .imgdiv{margin:0 auto; float:none;}
+.success-msg-row {
+    float: left;
+    width: 100%;
+}
+.success-msg-row .alert{
+    margin: 15px 0 0;
+}
+/*28-8-15 end _Rajvir*/
+.nav-tabs > li > a {
+    font-size: 15px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.mob_my_btn{float:right; margin:10px 0 0 0;}
+
+/*31-8-15 start _Rajvir*/
+.input-group-mn{
+width:100%;
+margin-right: 0;
+margin-bottom: 10px;
+}
+/*31-8-15 end _Rajvir*/
+
+}
+@media all and (max-width:400px){
+    .top-options h1,
+    .inlines-mn
+    {width: 100%;}
+    .cordinates-row > div{
+	width:100%;
+    }
+    .cordinates-r-col { text-align: left;}
+}
+
+/*14-8-15 end _Rajvir*/

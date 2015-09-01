@@ -1,0 +1,32 @@
+[13-Aug-2015 04:10:53 America/Denver] PHP Warning:  Unterminated comment starting line 38 in /home/bividana/public_html/webplatform/app/Config/core.php on line 38
+[13-Aug-2015 04:10:53 America/Denver] PHP Notice:  Undefined index: Error in /home/bividana/public_html/webplatform/lib/Cake/Core/Configure.php on line 100
+[13-Aug-2015 04:10:53 America/Denver] PHP Notice:  Undefined index: Exception in /home/bividana/public_html/webplatform/lib/Cake/Core/Configure.php on line 101
+[13-Aug-2015 04:10:53 America/Denver] PHP Notice:  Undefined index: cookie in /home/bividana/public_html/webplatform/lib/Cake/Model/Datasource/CakeSession.php on line 473
+[13-Aug-2015 04:10:53 America/Denver] PHP Notice:  Undefined index: timeout in /home/bividana/public_html/webplatform/lib/Cake/Model/Datasource/CakeSession.php on line 479
+[13-Aug-2015 04:10:53 America/Denver] PHP Warning:  ini_set(): session.name cannot be a numeric or empty '' in /home/bividana/public_html/webplatform/lib/Cake/Model/Datasource/CakeSession.php on line 488
+[13-Aug-2015 04:10:53 America/Denver] PHP Notice:  Undefined index: cookie in /home/bividana/public_html/webplatform/lib/Cake/Model/Datasource/CakeSession.php on line 473
+[13-Aug-2015 04:10:53 America/Denver] PHP Notice:  Undefined index: timeout in /home/bividana/public_html/webplatform/lib/Cake/Model/Datasource/CakeSession.php on line 479
+[13-Aug-2015 04:10:53 America/Denver] PHP Warning:  ini_set(): session.name cannot be a numeric or empty '' in /home/bividana/public_html/webplatform/lib/Cake/Model/Datasource/CakeSession.php on line 488
+[13-Aug-2015 04:10:53 America/Denver] PHP Notice:  Undefined index: cookie in /home/bividana/public_html/webplatform/lib/Cake/Model/Datasource/CakeSession.php on line 473
+[13-Aug-2015 04:10:53 America/Denver] PHP Notice:  Undefined index: timeout in /home/bividana/public_html/webplatform/lib/Cake/Model/Datasource/CakeSession.php on line 479
+[13-Aug-2015 04:10:53 America/Denver] PHP Warning:  ini_set(): session.name cannot be a numeric or empty '' in /home/bividana/public_html/webplatform/lib/Cake/Model/Datasource/CakeSession.php on line 488
+[13-Aug-2015 04:10:53 America/Denver] PHP Notice:  Undefined index: cookie in /home/bividana/public_html/webplatform/lib/Cake/Model/Datasource/CakeSession.php on line 473
+[13-Aug-2015 04:10:53 America/Denver] PHP Notice:  Undefined index: timeout in /home/bividana/public_html/webplatform/lib/Cake/Model/Datasource/CakeSession.php on line 479
+[13-Aug-2015 04:10:53 America/Denver] PHP Warning:  ini_set(): session.name cannot be a numeric or empty '' in /home/bividana/public_html/webplatform/lib/Cake/Model/Datasource/CakeSession.php on line 488
+[13-Aug-2015 04:10:53 America/Denver] PHP Warning:  set_error_handler() expects the argument () to be a valid callback in /home/bividana/public_html/webplatform/lib/Cake/Error/ErrorHandler.php on line 125
+[13-Aug-2015 04:10:53 America/Denver] PHP Fatal error:  [CakeSessionException] Unable to configure the session, setting session.name failed.
+#0 /home/bividana/public_html/webplatform/lib/Cake/Model/Datasource/CakeSession.php(189): CakeSession::_configureSession()
+#1 /home/bividana/public_html/webplatform/lib/Cake/Model/Datasource/CakeSession.php(216): CakeSession::start()
+#2 /home/bividana/public_html/webplatform/lib/Cake/View/Helper/SessionHelper.php(123): CakeSession::check('Message.flash')
+#3 /home/bividana/public_html/webplatform/app/View/Layouts/error.ctp(47): SessionHelper->flash()
+#4 /home/bividana/public_html/webplatform/lib/Cake/View/View.php(945): include('/home/bividana/...')
+#5 /home/bividana/public_html/webplatform/lib/Cake/View/View.php(907): View->_evaluate('/home/bividana/...', Array)
+#6 /home/bividana/public_html/webplatform/lib/Cake/View/View.php(535): View->_render('/home/bividana/...')
+#7 /home/bividana/public_html/webplatform/lib/Cake/View/View.php(479): View->renderLayout('', 'error')
+#8 /home/bividana/public_html/webplatform/lib/Cake/Error/E in /home/bividana/public_html/webplatform/lib/Cake/Error/ErrorHandler.php on line 132
+[18-Aug-2015 11:43:29 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/bividana/public_html/webplatform/app/View/Elements/post_list.ctp on line 14
+[18-Aug-2015 11:43:41 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/bividana/public_html/webplatform/app/View/Elements/post_list.ctp on line 14
+[18-Aug-2015 11:45:24 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/bividana/public_html/webplatform/app/View/Elements/post_list.ctp on line 14
+[18-Aug-2015 11:46:03 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/bividana/public_html/webplatform/app/View/Elements/post_list.ctp on line 14
+[18-Aug-2015 11:46:39 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/bividana/public_html/webplatform/app/View/Elements/post_list.ctp on line 14
+[18-Aug-2015 11:48:04 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/bividana/public_html/webplatform/app/View/Elements/post_list.ctp on line 14

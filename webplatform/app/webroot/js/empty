@@ -1,0 +1,90 @@
+        /* Active/Inactive/Delete functionality */
+        if ( (isset ( $this->data["Team"]["setStatus"] ) ) ) {
+            //debug($this->request->data); exit;
+            if ( ! empty ( $this->request->data['Team']['status'] ) ) {
+                $status = $this->request->data['Team']['status'] ;
+            } else {
+                $this->Session->setFlash ( "Please select the action.", 'default', array ( 'class' => 'alert alert-danger' ) ) ;
+                $this->redirect ( array ( 'action' => 'admin_teamlist' ) ) ;
+            }
+            if ( empty ( $this->request->data['is_team_leader'] ) ) {
+                $isteamleader = $this->TeamMember->find ( 'first', array ( 'conditions' => array (), 'fields' => array ( 'TeamMember.user_id' ) ) ) ;
+                if ( empty ( $isteamleader ) ) {
+                    if ( empty ( $this->request->data['is_team_leader'] ) ) {
+                        $isteamlead = '' ;
+                    } else {
+                        $isteamlead = $this->request->data['is_team_leader'] ;
+                    }
+                } else {
+                    $isteamlead = $isteamleader['TeamMember']['user_id'] ;
+                }
+            } else {
+                $isteamlead = $this->request->data['is_team_leader'] ;
+            }
+            $CheckedList = $this->request->data['checkboxes'] ;
+            $teamid = $this->request->data['User']['team_id'] ;
+            $model = 'GoalSetting' ;
+            $controller = $this->params['controller'] ;
+            $action = $this->params['action'] ; //debug($this->request->data);exit;
+            $this->setTeamStatus ( $status, $CheckedList, $model, $controller, $action, $teamid, $isteamlead ) ;
+        }
+
+        $assigneduser = array () ;
+        $usersids = $this->TeamMember->find ( 'all', array ( 'conditions' => array ( '' ) ) ) ;
+
+        if ( ! empty ( $usersids ) ) {
+            foreach ( $usersids as $usersid ) {
+                $assigneduser[] = $usersid['TeamMember']['user_id'] ;
+            }
+        }
+
+        $value = "" ;
+        $show = "" ;
+        $user_Ids = '' ;
+        $account_type = "" ;
+        $usersId = array () ;
+        $criteria = array ( 'User.id !=' => 1, 'User.group_id' => 4, 'User.status' => 1, 'User.id !=' => $assigneduser ) ;
+       
+        if ( ( ! empty ( $this->request->data["Search"]["user_id"] ) ) && ( ! empty ( $this->request->data["Search"]["team_id"] ) ) ) {
+            $company_id = $this->request->data["Search"]["user_id"] ;
+            $teamId = $this->request->data["Search"]["team_id"] ;
+        }else if(empty ( $this->request->data["Search"]["team_id"] )){
+            $teamId = '';
+            
+        }
+        
+        $isteamleads = $this->TeamMember->find ( 'first', array ( 'conditions' => array ( 'TeamMember.team_id' => $teamId, 'TeamMember.is_team_leader' => 1, 'TeamMember.company_id' => base64_decode ( $company_id ) ), 'fields' => array ( 'TeamMember.user_id' ) ) ) ;
+        $user_Ids = '';
+        if(!empty ($isteamleads) ){
+            $user_Ids = $isteamleads['TeamMember']['user_id'] ;
+        }
+        
+        $userIds = $this->TeamMember->find ( 'all', array ( 'conditions' => array ( 'TeamMember.team_id' => $teamId, 'TeamMember.company_id' => base64_decode ( $company_id ) ), 'fields' => array ( 'TeamMember.user_id' ) ) ) ;
+       
+        if ( ! empty ( $userIds ) ) {
+            foreach ( $userIds as $userId ) {
+                $usersId[] = $userId['TeamMember']['user_id'] ;
+            }
+            $criteria = array ( 'User.id !=' => 1, 'User.group_id' => 4, 'User.status' => 1, 'User.id' => $usersId,'User.company_id'=>  base64_decode($company_id)) ;
+        } else {
+            $criteria = array ( 'User.id !=' => 1, 'User.group_id' => 4, 'User.status' => 1, 'User.id !=' => $assigneduser,'User.company_id'=>  base64_decode($company_id) ) ;
+        }
+        
+        $value = $teamId ;
+
+
+        $this->User->unbindModel ( array ( 'belongsTo' => array ( 'Company', 'Group', 'Admin' ) ) ) ;
+        $this->Paginator->settings = array ( 'conditions' => $criteria,
+            'limit' => 40,
+            'order' => array (
+                'User.id' => 'DESC'
+            )
+                ) ;
+        $getData = $this->Paginator->paginate ( 'User' ) ;
+
+
+        $this->set ( 'getData', $getData ) ;
+        $this->set ( compact ( 'companies', 'teams' ) ) ;
+        $this->set ( compact ( 'usersId', 'user_Ids', 'goals', 'teamId', 'company_id' ) ) ;
+        $this->set ( 'keyword', $value ) ;
+        $this->set ( 'show', $show ) ;
